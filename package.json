@@ -1,0 +1,35 @@
+{
+  "name": "activitypub-types",
+  "version": "1.0.0",
+  "description": "ActivityPub Typescript types",
+  "main": "./dist/index.js",
+  "scripts": {
+    "tsc": "tsc -p ./tsconfig.json",
+    "tsc:watch": "tsc -w -p ./tsconfig.json",
+    "lint:fix": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.36.0",
+    "typescript": "^4.9.5"
+  },
+  "keywords": [
+    "activitypub",
+    "typescript",
+    "types",
+    "models",
+    "activitystreams"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": "SiranWeb <siranweb@tuta.io>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-user/repo-url.git"
+  }
+}
