@@ -1,6 +1,6 @@
 {
   "name": "activitypub-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ActivityPub Typescript types",
   "main": "./dist/index.js",
   "scripts": {
@@ -24,12 +24,14 @@
   "files": [
     "dist",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "package.json",
+    "package-lock.json"
   ],
   "author": "SiranWeb <siranweb@tuta.io>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-user/repo-url.git"
+    "url": "https://github.com/SiranWeb/activitypub-types"
   }
 }
