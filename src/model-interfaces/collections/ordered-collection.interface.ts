@@ -41,10 +41,10 @@ export interface APOrderedCollection extends APObject {
     last?: OrderedCollectionLastField;
 
     /**
-     * Identifies the items contained in a collection.
-     * The items might be ordered or unordered.
+     * Identifies the ordered items contained in a collection.
+     * The items must be ordered.
      *
-     * {@link https://www.w3.org/ns/activitystreams#items Docs}
+     * {@link https://www.w3.org/ns/activitystreams#orderedItems Docs}
      */
-    items?: OrderedCollectionItemsField[];
+    orderedItems?: OrderedCollectionItemsField[];
 }
