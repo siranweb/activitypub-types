@@ -16,6 +16,10 @@ You can use interfaces and extend them by yourself, or you can use specified fie
 import { APObject, APNote, ContextField, ContentMapField } from 'activitypub-types';
 ```
 
+## Changelog
+### v1.0.2
+- Use `orderedItems` instead of `items` in `OrderedCollection` ([#1](https://github.com/siranweb/activitypub-types/pull/1), thanks [@RangerMauve](https://github.com/RangerMauve))
+
 ## Contact
 You can contact me via [matrix](https://matrix.to/#/@siranweb:matrix.org) or [telegram](https://t.me/siranweb)
 
