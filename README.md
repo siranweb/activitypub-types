@@ -17,7 +17,7 @@ import { APObject, APNote, ContextField, ContentMapField } from 'activitypub-typ
 ```
 
 ## Changelog
-### v1.0.2
+### v1.0.3
 - Use `orderedItems` instead of `items` in `OrderedCollection` ([#1](https://github.com/siranweb/activitypub-types/pull/1), thanks [@RangerMauve](https://github.com/RangerMauve))
 
 ## Contact
