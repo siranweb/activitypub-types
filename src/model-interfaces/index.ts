@@ -1,7 +1,6 @@
 export * from './common/event.interface';
 export * from './common/link.interface';
 export * from './common/mention.interface';
-export * from './common/note.interface';
 export * from './common/object.interface';
 export * from './common/place.interface';
 export * from './common/profile.interface';
@@ -55,5 +54,6 @@ export * from './documents/article.interface';
 export * from './documents/document.interface';
 export * from './documents/audio.interface';
 export * from './documents/image.interface';
+export * from './documents/note.interface';
 export * from './documents/page.interface';
 export * from './documents/video.interface';
