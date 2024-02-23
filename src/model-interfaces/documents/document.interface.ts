@@ -1,3 +1,10 @@
 import {APObject} from '../common/object.interface';
 
-export type APDocument = APObject
+/**
+ * Represents a document of any kind.
+ * 
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-document Docs}
+ */
+export interface APDocument extends APObject {
+	type: 'Document';
+}
