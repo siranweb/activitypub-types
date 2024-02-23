@@ -1,4 +1,3 @@
-export * from './common/article.interface';
 export * from './common/event.interface';
 export * from './common/link.interface';
 export * from './common/mention.interface';
@@ -52,6 +51,7 @@ export * from './collections/collection-page.interface';
 export * from './collections/ordered-collection.interface';
 export * from './collections/ordered-collection-page.interface';
 
+export * from './documents/article.interface';
 export * from './documents/document.interface';
 export * from './documents/audio.interface';
 export * from './documents/image.interface';
