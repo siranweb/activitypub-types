@@ -1,4 +1,4 @@
-import {APObject} from '../common/object.interface';
+import {APObject} from '../objects/object.interface';
 
 /**
  * Represents a document of any kind.

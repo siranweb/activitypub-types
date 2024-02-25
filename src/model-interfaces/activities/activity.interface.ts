@@ -1,4 +1,4 @@
-import { APObject } from '../common/object.interface';
+import { APObject } from '../objects/object.interface';
 import {
     ActorField,
     InstrumentField,
@@ -9,7 +9,7 @@ import {
 } from '../../fields';
 
 /**
- * An `Activity` is a subtype of [Object](../common/object.interface.ts)
+ * An `Activity` is a subtype of [Object](../objects/object.interface.ts)
  * that describes some form of action that may happen,
  * is currently happening, or has already happened.
  * The `Activity` type itself serves as an abstract base

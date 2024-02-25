@@ -1,4 +1,4 @@
-import {APObject} from '../common/object.interface';
+import {APObject} from '../objects/object.interface';
 
 /**
  * Represents any kind of multi-paragraph written work.

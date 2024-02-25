@@ -1,4 +1,4 @@
-import { APObject } from '../common/object.interface';
+import { APObject } from '../objects/object.interface';
 import {
     CollectionCurrentField,
     CollectionFirstField, CollectionItemsField,
@@ -7,9 +7,9 @@ import {
 } from '../../fields';
 
 /**
- * A `Collection` is a subtype of [Object](../common/object.interface.ts) that
- * represents ordered or unordered sets of [Object](../common/object.interface.ts)
- * or [Link](../common/link.interface.ts) instances.
+ * A `Collection` is a subtype of [Object](../objects/object.interface.ts) that
+ * represents ordered or unordered sets of [Object](../objects/object.interface.ts)
+ * or [Link](../objects/link.interface.ts) instances.
  * 
  * Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-core/#collection)
  * specification for a complete description of the `Collection` type. 

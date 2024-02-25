@@ -1,4 +1,4 @@
-import { APObject } from '../common/object.interface';
+import { APObject } from '../objects/object.interface';
 
 /**
  * Represents a short written work typically less than a single paragraph in length.
