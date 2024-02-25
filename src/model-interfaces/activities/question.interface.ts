@@ -1,7 +1,8 @@
 import {AnyOfField, ClosedField, OneOfField} from '../../fields';
 import { APIntransitiveActivity } from './intransitive-activity.interface';
 
-export interface APQuestion extends APIntransitiveActivity {
+interface Question extends APIntransitiveActivity {
+    type: 'Question';
 
     /**
      * Identifies an exclusive option for a Question.
@@ -28,3 +29,16 @@ export interface APQuestion extends APIntransitiveActivity {
      */
     closed?: ClosedField;
 }
+
+/**
+ * Represents a question being asked.
+ * Question objects are an extension of [IntransitiveActivity](./intransitive-activity.interface.ts).
+ * That is, the `Question` object is an `Activity`,
+ * but the direct object is the question itself and
+ * therefore it would not contain an `object` property.
+ * 
+ * Either of the `anyOf` and `oneOf` properties MAY be
+ * used to express possible answers, but a `Question`
+ * object MUST NOT have both properties.
+ */
+export type APQuestion = Omit<Question, 'anyOf'> | Omit<Question, 'oneOf'>
