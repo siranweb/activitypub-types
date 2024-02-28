@@ -1,3 +1,10 @@
 import { APDocument } from './document.interface';
 
-export type APPage = APDocument
+/**
+ * Represents a Web Page.
+ * 
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-page Docs}
+ */
+export interface APPage extends Omit<APDocument, 'type'> {
+	type: 'Page';
+}

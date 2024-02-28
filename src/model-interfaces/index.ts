@@ -1,13 +1,11 @@
-export * from './common/article.interface';
-export * from './common/event.interface';
-export * from './common/link.interface';
-export * from './common/mention.interface';
-export * from './common/note.interface';
-export * from './common/object.interface';
-export * from './common/place.interface';
-export * from './common/profile.interface';
-export * from './common/tombstone.interface';
-export * from './common/relationship.interface';
+export * from './objects/event.interface';
+export * from './objects/link.interface';
+export * from './objects/mention.interface';
+export * from './objects/object.interface';
+export * from './objects/place.interface';
+export * from './objects/profile.interface';
+export * from './objects/tombstone.interface';
+export * from './objects/relationship.interface';
 
 export * from './activities/activity.interface';
 export * from './activities/intransitive-activity.interface';
@@ -52,8 +50,10 @@ export * from './collections/collection-page.interface';
 export * from './collections/ordered-collection.interface';
 export * from './collections/ordered-collection-page.interface';
 
+export * from './documents/article.interface';
 export * from './documents/document.interface';
 export * from './documents/audio.interface';
 export * from './documents/image.interface';
+export * from './documents/note.interface';
 export * from './documents/page.interface';
 export * from './documents/video.interface';

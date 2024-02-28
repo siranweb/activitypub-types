@@ -8,8 +8,15 @@ import {
     UnitsField
 } from '../../fields';
 
-
+/**
+ * Represents a logical or physical location.
+ * See [5.3 Representing Places](https://www.w3.org/TR/activitystreams-vocabulary/#places)
+ * for additional information.
+ * 
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-place Docs}
+ */
 export interface APPlace extends APObject {
+    type: 'Place';
 
     /**
      * Indicates the accuracy of position coordinates on a Place objects.

@@ -1,4 +1,4 @@
-import { APObject } from '../common/object.interface';
+import { APObject } from '../objects/object.interface';
 import {
     FollowersField,
     FollowingField,
@@ -11,6 +11,12 @@ import {
     EndpointsField
 } from '../../fields';
 
+/**
+ * `Actor` types are [Object](../objects/object.interface.ts)
+ * types that are capable of performing activities.
+ * 
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#actor-types Docs}
+ */
 export interface APActor extends APObject {
 
     /*

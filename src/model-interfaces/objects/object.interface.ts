@@ -31,6 +31,17 @@ import {
     DurationField, SourceField, LikesField, SharesField, ContextField,
 } from '../../fields';
 
+/**
+ * Describes an object of any kind.
+ * The `Object` type serves as the base type for most of
+ * the other kinds of objects defined in the Activity Vocabulary,
+ * including other Core types such as [Activity](../activities/activity.interface.ts),
+ * [IntransitiveActivity](../activities/intransitive-activity.interface.ts),
+ * [Collection](../collections/collection.interface.ts) and
+ * [OrderedCollection](../collections/ordered-collection.interface.ts).
+ * 
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object Docs}
+ */
 export interface APObject {
     /**
      * JSON-LD uses the special @context property to define the processing context.
