@@ -28,7 +28,7 @@ import {
     SummaryField,
     SummaryMapField,
     UpdatedField,
-    DurationField, SourceField, LikesField, SharesField, ContextField,
+    DurationField, SourceField, LikesField, SharesField,
 } from '../../fields';
 
 /**
@@ -39,18 +39,10 @@ import {
  * [IntransitiveActivity](../activities/intransitive-activity.interface.ts),
  * [Collection](../collections/collection.interface.ts) and
  * [OrderedCollection](../collections/ordered-collection.interface.ts).
- * 
+ *
  * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object Docs}
  */
 export interface APObject {
-    /**
-     * JSON-LD uses the special @context property to define the processing context.
-     * The Field of the @context property is defined by the [JSON-LD] specification.
-     *
-     * {@link https://www.w3.org/TR/activitystreams-core/#jsonld Docs}
-     */
-    '@context'?: ContextField | ContextField[];
-
     /**
      * Provides the globally unique identifier for
      * an {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-object Object}
