@@ -40,5 +40,7 @@ interface Question extends APIntransitiveActivity {
  * Either of the `anyOf` and `oneOf` properties MAY be
  * used to express possible answers, but a `Question`
  * object MUST NOT have both properties.
+ * 
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-question Docs}
  */
-export type APQuestion = Omit<Question, 'anyOf'> | Omit<Question, 'oneOf'>
+export type APQuestion = Omit<Question, 'anyOf'> | Omit<Question, 'oneOf'> | Omit<Question, 'anyOf' | 'oneOf'>
