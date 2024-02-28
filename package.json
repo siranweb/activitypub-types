@@ -1,6 +1,6 @@
 {
   "name": "activitypub-types",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "ActivityPub Typescript types",
   "main": "./dist/index.js",
   "scripts": {
@@ -23,8 +23,6 @@
   ],
   "files": [
     "dist",
-    "LICENSE",
-    "README.md",
     "package.json",
     "package-lock.json"
   ],

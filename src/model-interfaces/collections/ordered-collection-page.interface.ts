@@ -1,32 +1,17 @@
-import {
-    OrderedCollectionPageNextField,
-    OrderedCollectionPagePartOfField,
-    OrderedCollectionPagePrevField,
-    StartIndexField
-} from '../../fields';
+import { StartIndexField } from '../../fields';
+import { APCollectionPage } from './collection-page.interface';
 import { APOrderedCollection } from './ordered-collection.interface';
 
-export interface APOrderedCollectionPage extends APOrderedCollection {
-    /**
-     * Identifies the OrderedCollection to which a OrderedCollectionPage objects items belong.
-     *
-     * {@link https://www.w3.org/ns/activitystreams#partOf Docs}
-     */
-    partOf?: OrderedCollectionPagePartOfField;
-
-    /**
-     * In a paged OrderedCollection, indicates the next page of items.
-     *
-     * {@link https://www.w3.org/ns/activitystreams#next Docs}
-     */
-    next?: OrderedCollectionPageNextField;
-
-    /**
-     * In a paged OrderedCollection, identifies the previous page of items.
-     *
-     * {@link https://www.w3.org/ns/activitystreams#prev Docs}
-     */
-    prev?: OrderedCollectionPagePrevField;
+/**
+ * Used to represent ordered subsets of items from an [OrderedCollection](./ordered-collection.interface.ts).
+ * 
+ * Refer to the [Activity Streams 2.0 Core](https://www.w3.org/TR/activitystreams-core/#dfn-orderedcollectionpage)
+ * specification for a complete description of the `OrderedCollectionPage` object.
+ *
+ * {@link https://www.w3.org/TR/activitystreams-vocabulary/#dfn-orderedcollectionpage Docs}
+ */
+export interface APOrderedCollectionPage extends Omit<APOrderedCollection, 'type'>, Omit<APCollectionPage, 'type' | 'items'> {
+    type: 'OrderedCollectionPage'
 
     /**
      * A non-negative integer value identifying the relative position
